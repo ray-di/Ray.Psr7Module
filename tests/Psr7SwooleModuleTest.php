@@ -29,15 +29,4 @@ class Psr7SwooleModuleTest extends TestCase
         $request = @$requestProvider->get();
         $this->assertInstanceOf(RequestInterface::class, $request);
     }
-
-    public function superGlobalsServer()
-    {
-        return  [
-            'REQUEST_METHOD' => 'POST',
-            'REQUEST_URI' => '/foo/bar',
-            'QUERY_STRING' => 'abc=123&foo=bar',
-            'SERVER_NAME' => 'example.com',
-            'CONTENT_TYPE' => 'multipart/form-data'
-        ];
-    }
 }

@@ -3,7 +3,7 @@ namespace Ray\HttpMessage;
 
 use Ray\Di\AbstractModule;
 
-class Psr7HttpModule extends AbstractModule
+class Psr7Module extends AbstractModule
 {
     protected function configure()
     {
