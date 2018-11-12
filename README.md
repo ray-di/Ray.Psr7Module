@@ -2,7 +2,7 @@
 
 ## Overview
 
-`Ray.Psr7Module` provides `RequestProvider` object to get the implementation of [PSR7 Request interface](https://github.com/php-fig/http-message/blob/master/src/ServerRequestInterface.php).
+`Ray.Psr7Module` provides `RequestProvider` to get the [PSR7 ServerRequest](https://github.com/php-fig/http-message/blob/master/src/ServerRequestInterface.php) object.
 
 ## Installation
 
