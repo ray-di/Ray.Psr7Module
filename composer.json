@@ -1,6 +1,6 @@
 {
-    "name": "ray/http-message",
-    "description": "",
+    "name": "ray/psr7-module",
+    "description": "PSR7 module for Ray.Di",
     "license": "MIT",
     "authors": [
         {
