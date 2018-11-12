@@ -39,7 +39,7 @@ class Foo
     {
         $this->request = requestProvider->get();
         // retrieve cookies
-        $cookie = $this->request->getServerParams(); // $_COOKIE
+        $cookie = $this->request->getCookieParams(); // $_COOKIE
     }
 }
 ````
