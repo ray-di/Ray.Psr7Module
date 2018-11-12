@@ -1,5 +1,10 @@
 # Ray.Psr7Module
 
+[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/ray-di/Ray.Psr7Module/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/ray-di/Ray.Psr7Module/?branch=master)
+[![Code Coverage](https://scrutinizer-ci.com/g/ray-di/Ray.Psr7Module/badges/coverage.png?b=master)](https://scrutinizer-ci.com/g/ray-di/Ray.Psr7Module/?branch=master)
+[![Build Status](https://travis-ci.org/ray-di/Ray.Psr7Module.svg?branch=master)](https://travis-ci.org/ray-di/Ray.Psr7Module)
+
+
 ## Overview
 
 `Ray.Psr7Module` provides `RequestProvider` to get the [PSR7 ServerRequest](https://github.com/php-fig/http-message/blob/master/src/ServerRequestInterface.php) object.
