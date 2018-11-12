@@ -2,7 +2,7 @@
 namespace Ray\HttpMessage;
 
 use PHPUnit\Framework\TestCase;
-use Psr\Http\Message\RequestInterface;
+use Psr\Http\Message\ServerRequestInterface;
 use Ray\Di\Injector;
 
 class Psr7HttpModuleTest extends TestCase
@@ -14,7 +14,7 @@ class Psr7HttpModuleTest extends TestCase
         $requestProvider = $injector->getInstance(RequestProviderInterface::class);
         $_SERVER = $this->superGlobalsServer();
         $request = $requestProvider->get();
-        $this->assertInstanceOf(RequestInterface::class, $request);
+        $this->assertInstanceOf(ServerRequestInterface::class, $request);
     }
 
     public function superGlobalsServer()

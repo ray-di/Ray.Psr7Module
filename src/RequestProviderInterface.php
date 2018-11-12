@@ -1,9 +1,9 @@
 <?php
 namespace Ray\HttpMessage;
 
-use Psr\Http\Message\RequestInterface;
+use Psr\Http\Message\ServerRequestInterface;
 
 interface RequestProviderInterface
 {
-    public function get() : RequestInterface;
+    public function get() : ServerRequestInterface;
 }

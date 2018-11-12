@@ -3,11 +3,14 @@ namespace Ray\HttpMessage;
 
 use Nyholm\Psr7\Factory\Psr17Factory;
 use Nyholm\Psr7Server\ServerRequestCreator;
-use Psr\Http\Message\RequestInterface;
+use Psr\Http\Message\ServerRequestInterface;
 
 final class HttpRequestProvider implements RequestProviderInterface
 {
-    public function get() : RequestInterface
+    /**
+     * {@inheritdoc}
+     */
+    public function get() : ServerRequestInterface
     {
         $psr17Factory = new Psr17Factory;
         $serverRequest = (new ServerRequestCreator(
