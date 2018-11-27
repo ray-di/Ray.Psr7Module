@@ -61,6 +61,7 @@ class Foo
 
 ````php
 
+use Psr\Http\Message\UploadedFileInterface;
 use Ray\HttpMessage\Annotation\UploadFiles;
 
 class Foo
@@ -72,6 +73,7 @@ class Foo
     {
         // retrieve file name
         $file = $files['my-form']['details']['avatar'][0]
+        /* @var UploadedFileInterface $file */
         $name = $file->getClientFilename(); // my-avatar3.png
     }
 }
