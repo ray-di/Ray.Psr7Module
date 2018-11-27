@@ -47,6 +47,9 @@ class Foo
 
 ### URI
 ````php
+
+use Psr\Http\Message\UriInterface;
+
 class Foo
 {
     public function __construct(UriInterface $uri)
