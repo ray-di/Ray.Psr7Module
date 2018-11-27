@@ -32,6 +32,8 @@ class AppModule extends AbstractModule
 
 ## Usage
 
+### ServerRequest (general)
+
 ````php
 class Foo
 {
@@ -39,6 +41,38 @@ class Foo
     {
         // retrieve cookies
         $cookie = $serverRequest->getCookieParams(); // $_COOKIE
+    }
+}
+````
+
+### URI
+````php
+class Foo
+{
+    public function __construct(UriInterface $uri)
+    {
+        // retrieve host name
+        $host = $uri->getHost();
+    }
+}
+````
+
+### Upload Files
+
+````php
+
+use Ray\HttpMessage\Annotation\UploadFiles;
+
+class Foo
+{
+    /**
+     * @UploadFiles
+     */
+    public function __construct(array $files)
+    {
+        // retrieve file name
+        $file = $files['my-form']['details']['avatar'][0]
+        $name = $file->getClientFilename(); // my-avatar3.png
     }
 }
 ````
