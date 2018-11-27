@@ -35,16 +35,10 @@ class AppModule extends AbstractModule
 ````php
 class Foo
 {
-    /**
-     * @var \Psr\Http\Message\ServerRequestInterface
-     */
-    private $request;
-
-    public function __construct(RequestProviderInterface $requestProvider)
+    public function __construct(ServerRequestInterface $serverRequest)
     {
-        $this->request = requestProvider->get();
         // retrieve cookies
-        $cookie = $this->request->getCookieParams(); // $_COOKIE
+        $cookie = $serverRequest->getCookieParams(); // $_COOKIE
     }
 }
 ````
