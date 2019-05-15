@@ -29,6 +29,14 @@ class Psr7HttpModuleTest extends TestCase
         $this->assertInstanceOf(ServerRequest::class, $serverRequest);
     }
 
+    public function testPsr7ServerRequestInterfaceTest()
+    {
+        $injector = new Injector(new Psr7Module);
+        /* @var ServerRequest ServerRequestInterface */
+        $serverRequest = $injector->getInstance(ServerRequestInterface::class);
+        $this->assertInstanceOf(ServerRequestInterface::class, $serverRequest);
+    }
+
     public function testPsr7UriTest()
     {
         $injector = new Injector(new Psr7Module);
