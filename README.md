@@ -1,8 +1,6 @@
 # Ray.Psr7Module
-[![Type Coverage](https://shepherd.dev/github/ray-di/Ray.Psr7Module/UploadFiles.php/coverage.svg)](https://shepherd.dev/github/bearsunday/BEAR.Package)
 
 [![Code Coverage](https://scrutinizer-ci.com/g/ray-di/Ray.Psr7Module/badges/coverage.png?b=master)](https://scrutinizer-ci.com/g/ray-di/Ray.Psr7Module/?branch=master)
-[![Type Coverage](https://shepherd.dev/github/ray-di/Ray.Psr7Module/coverage.svg)](https://shepherd.dev/github/ray-di/Ray.Psr7Module)
 ![Continuous Integration](https://github.com/ray-di/Ray.Psr7Module/workflows/Continuous%20Integration/badge.svg)
 
 ## Overview
