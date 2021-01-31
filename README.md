@@ -1,9 +1,7 @@
 # Ray.Psr7Module
 
-[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/ray-di/Ray.Psr7Module/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/ray-di/Ray.Psr7Module/?branch=master)
 [![Code Coverage](https://scrutinizer-ci.com/g/ray-di/Ray.Psr7Module/badges/coverage.png?b=master)](https://scrutinizer-ci.com/g/ray-di/Ray.Psr7Module/?branch=master)
-[![Build Status](https://travis-ci.org/ray-di/Ray.Psr7Module.svg?branch=master)](https://travis-ci.org/ray-di/Ray.Psr7Module)
-
+![Continuous Integration](https://github.com/ray-di/Ray.Psr7Module/workflows/Continuous%20Integration/badge.svg)
 
 ## Overview
 

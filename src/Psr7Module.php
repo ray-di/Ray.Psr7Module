@@ -1,4 +1,7 @@
 <?php
+
+declare(strict_types=1);
+
 namespace Ray\HttpMessage;
 
 use Nyholm\Psr7\ServerRequest;
