@@ -1,9 +1,9 @@
 # Ray.Psr7Module
+[![Type Coverage](https://shepherd.dev/github/ray-di/Ray.Psr7Module/UploadFiles.php/coverage.svg)](https://shepherd.dev/github/bearsunday/BEAR.Package)
 
-[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/ray-di/Ray.Psr7Module/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/ray-di/Ray.Psr7Module/?branch=master)
 [![Code Coverage](https://scrutinizer-ci.com/g/ray-di/Ray.Psr7Module/badges/coverage.png?b=master)](https://scrutinizer-ci.com/g/ray-di/Ray.Psr7Module/?branch=master)
-[![Build Status](https://travis-ci.org/ray-di/Ray.Psr7Module.svg?branch=master)](https://travis-ci.org/ray-di/Ray.Psr7Module)
-
+[![Type Coverage](https://shepherd.dev/github/ray-di/Ray.Psr7Module/coverage.svg)](https://shepherd.dev/github/ray-di/Ray.Psr7Module)
+![Continuous Integration](https://github.com/ray-di/Ray.Psr7Module/workflows/Continuous%20Integration/badge.svg)
 
 ## Overview
 
