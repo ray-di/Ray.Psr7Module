@@ -11,7 +11,7 @@ use Ray\HttpMessage\Annotation\UploadFiles;
 
 class Psr7HttpModuleTest extends TestCase
 {
-    public function testPsr7HttpModule()
+    public function testPsr7HttpModule(): void
     {
         $injector = new Injector(new Psr7Module);
         /* @var RequestProviderInterface $requestProvider */
@@ -21,7 +21,7 @@ class Psr7HttpModuleTest extends TestCase
         $this->assertInstanceOf(ServerRequestInterface::class, $request);
     }
 
-    public function testPsr7ServerRequestTest()
+    public function testPsr7ServerRequestTest(): void
     {
         $injector = new Injector(new Psr7Module);
         /* @var ServerRequest $serverRequest */
@@ -29,7 +29,7 @@ class Psr7HttpModuleTest extends TestCase
         $this->assertInstanceOf(ServerRequest::class, $serverRequest);
     }
 
-    public function testPsr7ServerRequestInterfaceTest()
+    public function testPsr7ServerRequestInterfaceTest(): void
     {
         $injector = new Injector(new Psr7Module);
         /* @var ServerRequest ServerRequestInterface */
@@ -37,7 +37,7 @@ class Psr7HttpModuleTest extends TestCase
         $this->assertInstanceOf(ServerRequestInterface::class, $serverRequest);
     }
 
-    public function testPsr7UriTest()
+    public function testPsr7UriTest(): void
     {
         $injector = new Injector(new Psr7Module);
         /* @var UriInterface $uri */
@@ -45,7 +45,7 @@ class Psr7HttpModuleTest extends TestCase
         $this->assertInstanceOf(UriInterface::class, $uri);
     }
 
-    public function testPsr7UploadFilesTest()
+    public function testPsr7UploadFilesTest(): void
     {
         $_FILES = $this->files();
         $injector = new Injector(new Psr7Module);
@@ -56,7 +56,10 @@ class Psr7HttpModuleTest extends TestCase
         $this->assertSame('my-avatar3.png', $file->getClientFilename());
     }
 
-    public function superGlobalsServer()
+    /**
+     * @return array<string>tests/Psr7HttpModuleTest.php
+     */
+    public function superGlobalsServer(): array
     {
         return  [
             'REQUEST_METHOD' => 'POST',
@@ -67,7 +70,10 @@ class Psr7HttpModuleTest extends TestCase
         ];
     }
 
-    public function files()
+    /**
+     * @return array<string, array>
+     */
+    public function files(): array
     {
         return [
             'my-form' => [
