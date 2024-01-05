@@ -4,8 +4,10 @@ declare(strict_types=1);
 
 namespace Ray\HttpMessage;
 
+use Psr\Http\Message\UploadedFileInterface;
 use Ray\Di\ProviderInterface;
 
+/** @implements ProviderInterface<array<UploadedFileInterface>> */
 final class UploadfilesProvider implements ProviderInterface
 {
     /**
@@ -13,6 +15,9 @@ final class UploadfilesProvider implements ProviderInterface
      */
     public function get()
     {
-        return (new HttpRequestProvider())->get()->getUploadedFiles();
+        $files = (new HttpRequestProvider())->get()->getUploadedFiles(); // @phpcs:ignore SlevomatCodingStandard.Variables.UselessVariable.UselessVariable
+        /** @var array<UploadedFileInterface> $files */
+
+        return $files;
     }
 }

@@ -55,8 +55,8 @@ class Psr7HttpModuleTest extends TestCase
         $_FILES = $this->files();
         $injector = new Injector(new Psr7Module());
         $files = $injector->getInstance('', UploadFiles::class);
-        $file = $files['my-form']['details']['avatar'][2];
-        /** @var UploadedFileInterface $file */
+        $file = $files['my-form']['details']['avatar'][2]; // @phpstan-ignore-line
+        /** @var UploadedFileInterface $file */ //@phpcs:ignore SlevomatCodingStandard.Commenting.InlineDocCommentDeclaration.NoAssignment
         $this->assertInstanceOf(UploadedFileInterface::class, $file);
         $this->assertSame('my-avatar3.png', $file->getClientFilename());
     }
