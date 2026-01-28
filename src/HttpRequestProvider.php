@@ -9,7 +9,10 @@ use Nyholm\Psr7Server\ServerRequestCreator;
 use Psr\Http\Message\ServerRequestInterface;
 use Ray\Di\ProviderInterface;
 
-/** @implements ProviderInterface<ServerRequestInterface> */
+/**
+ * @implements ProviderInterface<ServerRequestInterface>
+ * @psalm-suppress DeprecatedInterface
+ */
 final class HttpRequestProvider implements ProviderInterface, RequestProviderInterface
 {
     /**
