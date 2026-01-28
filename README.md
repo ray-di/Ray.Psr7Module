@@ -79,3 +79,25 @@ class Foo
     }
 }
 ````
+
+### Lazy Loading
+
+If you want to lazy load the `ServerRequest`, use `Ray\Di\Di\Set` attribute.
+
+```php
+use Ray\Di\Di\Set;
+use Ray\Di\ProviderInterface;
+use Psr\Http\Message\ServerRequestInterface;
+
+class Foo
+{
+    public function __construct(
+        #[Set(ServerRequestInterface::class)] private ProviderInterface $requestProvider
+    ) {}
+
+    public function onGet()
+    {
+        $request = $this->requestProvider->get();
+    }
+}
+```
