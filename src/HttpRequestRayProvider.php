@@ -10,6 +10,7 @@ use Ray\Di\ProviderInterface;
 /**
  * @implements ProviderInterface<ServerRequestInterface>
  * @deprecated
+ * @codeCoverageIgnore
  */
 final class HttpRequestRayProvider implements ProviderInterface
 {

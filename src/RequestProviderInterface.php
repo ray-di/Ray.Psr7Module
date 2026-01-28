@@ -8,6 +8,7 @@ use Psr\Http\Message\ServerRequestInterface;
 
 /**
  * @deprecated
+ * @codeCoverageIgnore
  */
 interface RequestProviderInterface
 {
