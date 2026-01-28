@@ -15,7 +15,7 @@ use Ray\Di\ProviderInterface;
 final class HttpRequestRayProvider implements ProviderInterface
 {
     /**
-     * {@inheritdoc}
+     * {@inheritDoc}
      */
     public function get()
     {

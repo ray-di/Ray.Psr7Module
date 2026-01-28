@@ -61,9 +61,7 @@ class Psr7HttpModuleTest extends TestCase
         $this->assertSame('my-avatar3.png', $file->getClientFilename());
     }
 
-    /**
-     * @return array<string>tests/Psr7HttpModuleTest.php
-     */
+    /** @return array<string, string> */
     public function superGlobalsServer(): array
     {
         return [
@@ -75,9 +73,7 @@ class Psr7HttpModuleTest extends TestCase
         ];
     }
 
-    /**
-     * @return array<string, array<mixed>>
-     */
+    /** @return array<string, array<mixed>> */
     public function files(): array
     {
         return [

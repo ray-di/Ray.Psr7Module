@@ -11,7 +11,7 @@ use Ray\Di\ProviderInterface;
 final class UploadfilesProvider implements ProviderInterface
 {
     /**
-     * {@inheritdoc}
+     * {@inheritDoc}
      */
     public function get()
     {

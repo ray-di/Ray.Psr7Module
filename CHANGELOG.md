@@ -11,6 +11,7 @@ All notable changes to this project will be documented in this file.
 ### Changed
 - Required PHP version increased to `^8.1`.
 - `HttpRequestProvider` now implements `Ray\Di\ProviderInterface` directly.
+- Updated `doctrine/coding-standard` to `^13.0`.
 
 ### Deprecated
 - `Ray\HttpMessage\RequestProviderInterface` (Use `Ray\Di\ProviderInterface` instead).

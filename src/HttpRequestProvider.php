@@ -13,7 +13,7 @@ use Ray\Di\ProviderInterface;
 final class HttpRequestProvider implements ProviderInterface, RequestProviderInterface
 {
     /**
-     * {@inheritdoc}
+     * {@inheritDoc}
      */
     public function get(): ServerRequestInterface
     {
@@ -23,7 +23,7 @@ final class HttpRequestProvider implements ProviderInterface, RequestProviderInt
             $psr17Factory, // ServerRequestFactory
             $psr17Factory, // UriFactory
             $psr17Factory, // UploadedFileFactory
-            $psr17Factory  // StreamFactory
+            $psr17Factory,  // StreamFactory
         ))->fromGlobals();
     }
 }
