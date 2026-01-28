@@ -73,6 +73,12 @@
             "@sa",
             "@pcov",
             "@metrics"
+        ],
+        "post-install-cmd": [
+            "@composer bin all install --ansi --ignore-platform-reqs"
+        ],
+        "post-update-cmd": [
+            "@composer bin all install --ansi --ignore-platform-reqs"
         ]
     },
     "config": {
