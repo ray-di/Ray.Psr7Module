@@ -7,8 +7,10 @@ namespace Ray\HttpMessage;
 use Nyholm\Psr7\Factory\Psr17Factory;
 use Nyholm\Psr7Server\ServerRequestCreator;
 use Psr\Http\Message\ServerRequestInterface;
+use Ray\Di\ProviderInterface;
 
-final class HttpRequestProvider implements RequestProviderInterface
+/** @implements ProviderInterface<ServerRequestInterface> */
+final class HttpRequestProvider implements ProviderInterface, RequestProviderInterface
 {
     /**
      * {@inheritdoc}

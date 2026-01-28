@@ -7,7 +7,10 @@ namespace Ray\HttpMessage;
 use Psr\Http\Message\ServerRequestInterface;
 use Ray\Di\ProviderInterface;
 
-/** @implements ProviderInterface<ServerRequestInterface> */
+/**
+ * @implements ProviderInterface<ServerRequestInterface>
+ * @deprecated
+ */
 final class HttpRequestRayProvider implements ProviderInterface
 {
     /**

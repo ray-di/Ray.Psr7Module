@@ -15,8 +15,8 @@ class Psr7Module extends AbstractModule
     protected function configure()
     {
         $this->bind(RequestProviderInterface::class)->to(HttpRequestProvider::class);
-        $this->bind(ServerRequest::class)->toProvider(HttpRequestRayProvider::class);
-        $this->bind(ServerRequestInterface::class)->toProvider(HttpRequestRayProvider::class);
+        $this->bind(ServerRequest::class)->toProvider(HttpRequestProvider::class);
+        $this->bind(ServerRequestInterface::class)->toProvider(HttpRequestProvider::class);
         $this->bind(UriInterface::class)->toProvider(UriProvider::class);
         $this->bind()->annotatedWith(UploadFiles::class)->toProvider(UploadfilesProvider::class);
     }
