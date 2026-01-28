@@ -67,13 +67,11 @@ use Ray\HttpMessage\Annotation\UploadFiles;
 
 class Foo
 {
-    /**
-     * @UploadFiles
-     */
-    public function __construct(array $files)
-    {
+    public function __construct(
+        #[UploadFiles] array $files
+    ) {
         // retrieve file name
-        $file = $files['my-form']['details']['avatar'][0]
+        $file = $files['my-form']['details']['avatar'][0];
         /* @var UploadedFileInterface $file */
         $name = $file->getClientFilename(); // my-avatar3.png
     }
