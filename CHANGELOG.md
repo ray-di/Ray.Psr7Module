@@ -2,7 +2,7 @@
 
 All notable changes to this project will be documented in this file.
 
-## [Unreleased]
+## [1.4.0] - 2026-01-29
 
 ### Added
 - PHP 8 Attribute support for `UploadFiles`.
